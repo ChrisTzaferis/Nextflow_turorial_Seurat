@@ -14,6 +14,6 @@ process RUN_SEURAT {
 
     script:
     """
-    Rscript bin/seuratAnalysis.R "${input_folder_path}" "${output_name}" "${reg_exp_mito}"
+    Rscript ${baseDir}/bin/seuratAnalysis.R "${input_folder_path}" "${output_name}" "${reg_exp_mito}"
     """
 }
